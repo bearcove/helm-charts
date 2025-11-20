@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  peertube:
+  - apiVersion: v2
+    appVersion: 7.3.0
+    created: "2025-11-20T18:00:37.950899+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ^12.1.4
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ^17.3.17
+    description: 'Free software to take back control of your videos '
+    digest: 5c10e6ed153ee4b49bc42e6cbf52783bd036b3094047bdb99f6a7112923f4fab
+    icon: https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_de_PeerTube.svg
+    maintainers:
+    - email: ace@haxalot.com
+      name: Alexander Olofsson
+    name: peertube
+    type: application
+    urls:
+    - https://bearcove.github.io/helm-charts/peertube-1.5.9.tgz
+    version: 1.5.9
+generated: "2025-11-20T18:00:37.944974+01:00"
